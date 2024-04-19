@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signup">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/vector" />
+        />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/send_icon" />
+        />
+    <TextView
+        android:id="@+id/title_logo"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/jua"
+        android:text="@string/apptitle"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/slogan_logo"
+        android:layout_above="@id/btnCrearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:text="@string/slogan"
+        android:textFontWeight="400"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/jua"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCrearCuenta"
+        android:layout_above="@id/link_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Crear cuenta nueva"
+        android:textColor="@color/white"
+        android:background="@drawable/big_button"/>
+
+    <TextView
+        android:id="@+id/link_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tiene cuenta?"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/jua"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        />
+</RelativeLayout>

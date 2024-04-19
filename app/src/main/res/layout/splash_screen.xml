@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:id="@+id/splash_screen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/vector" />
+        />
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="106dp"
+        android:layout_height="137dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/send_icon" />
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/font_jua_wallet"
+        android:text="@string/apptitle"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</RelativeLayout>
