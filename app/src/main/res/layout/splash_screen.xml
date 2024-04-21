@@ -11,14 +11,13 @@
         android:layout_height="137dp"
         android:layout_centerInParent="true"
         android:src="@drawable/vector" />
-        />
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="106dp"
-        android:layout_height="137dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/send_icon" />
-    />
+        android:src="@drawable/alkemy_flecha"
+        />
 
     <TextView
         android:layout_width="wrap_content"
