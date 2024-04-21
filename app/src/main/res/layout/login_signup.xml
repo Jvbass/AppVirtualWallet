@@ -2,25 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_signup">
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="106dp"
-        android:layout_height="137dp"
+        android:layout_height="106dp"
         android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/vector" />
-
-    <ImageView
-        android:id="@+id/logo1"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="230dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/alkemy_flecha" />
+        android:src="@drawable/icono_alkemy" />
 
     <TextView
         android:id="@+id/title_logo"
@@ -52,7 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:fontFamily="@font/font_jua_wallet"
         android:text="Crear cuenta nueva"
         android:textColor="@color/white"
@@ -64,7 +55,7 @@
         android:layout_height="wrap_content"
         android:text="¿Ya tienes cuenta?"
         android:textColor="@color/primary"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:fontFamily="@font/jua"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
