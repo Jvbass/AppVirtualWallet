@@ -8,20 +8,20 @@
         android:id="@+id/logo"
         android:layout_width="106dp"
         android:layout_height="137dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:src="@drawable/vector" />
-        />
+
     <ImageView
         android:id="@+id/logo1"
-        android:layout_width="106dp"
-        android:layout_height="137dp"
-        android:layout_marginTop="125dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="230dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/send_icon" />
-        />
+        android:src="@drawable/alkemy_flecha" />
+
     <TextView
         android:id="@+id/title_logo"
         android:layout_below="@id/logo"
@@ -42,10 +42,9 @@
         android:layout_marginBottom="200dp"
         android:text="@string/slogan"
         android:textFontWeight="400"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textColor="@color/white"
-        android:fontFamily="@font/jua"
-        />
+        android:fontFamily="@font/jua"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCrearCuenta"
@@ -53,6 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/font_jua_wallet"
         android:text="Crear cuenta nueva"
         android:textColor="@color/white"
         android:background="@drawable/big_button"/>
@@ -61,11 +62,11 @@
         android:id="@+id/link_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¿Ya tiene cuenta?"
+        android:text="¿Ya tienes cuenta?"
         android:textColor="@color/primary"
+        android:textSize="20dp"
         android:fontFamily="@font/jua"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="60dp"
-        />
+        android:layout_marginBottom="60dp"/>
 </RelativeLayout>
