@@ -2,4 +2,6 @@
     <string name="app_name">VirtualWallet</string>
     <string name="apptitle">AlkeWallet</string>
     <string name="slogan">El lugar mas seguro para tu dinero</string>
+    <string name="ya_tienes_cuenta">¿Ya tienes cuenta?</string>
+    <string name="login">Login</string>
 </resources>
