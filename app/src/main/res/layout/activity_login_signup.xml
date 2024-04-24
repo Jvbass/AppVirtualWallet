@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="12"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:id="@+id/loginSignup_page">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -53,8 +54,8 @@
             android:id="@+id/btnCrearCuenta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:textSize="18dp"
+            android:layout_margin="30dp"
+            android:textSize="18sp"
             android:fontFamily="@font/font_jua_wallet"
             android:text="Crear cuenta nueva"
             android:textColor="@color/white"
@@ -62,12 +63,13 @@
             android:textAllCaps="false"/>
 
         <TextView
+            android:id="@+id/linkCrearCuenta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ya_tienes_cuenta"
             android:fontFamily="@font/font_jua_wallet"
             android:textColor="@color/primary_dark"
-            android:textSize="20dp"/>
+            android:textSize="20sp"/>
 
     </LinearLayout>
 </LinearLayout>
