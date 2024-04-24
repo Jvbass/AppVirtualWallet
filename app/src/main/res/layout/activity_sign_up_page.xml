@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:id="@+id/signup_page">
+
+    <!-- Guías para posicionar los elementos -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tittleSignup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:text="Registrate y"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/tittleSignup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:text="empezar a transferir!"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittleSignup1" />
+
+    <!-- Campo de texto para ingresar el email -->
+    <TextView
+        android:id="@+id/labelNombre"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:text="Nombre"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombreInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black_light"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelNombre">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nombreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_jua_wallet"
+            android:hint="Ingresar nombre"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto para el apellido -->
+    <TextView
+        android:id="@+id/labelApellido"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:text="Apellido"
+        app:layout_constraintTop_toBottomOf="@+id/nombreInput"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/apellidoInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black_light"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelApellido">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/apellidoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_jua_wallet"
+            android:hint="Ingresar apellido"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto para ingresar el email -->
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:text="Email"
+        app:layout_constraintTop_toBottomOf="@+id/apellidoInput"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black_light"
+        app:boxStrokeWidth="2dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_jua_wallet"
+            android:hint="Ingresar email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Campo de texto para ingresar la contraseña -->
+    <TextView
+        android:id="@+id/labelPassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:text="Contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black_light"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black_light"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_jua_wallet"
+            android:hint="Ingresar contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/labelPasswordRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/font_jua_wallet"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:text="Reingresar contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInputRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="30dp"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:boxStrokeColor="@color/black_light"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black_light"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelPasswordRepeat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordRepeatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/font_jua_wallet"
+            android:hint="Reingresar contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black_light" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/crearCuentaBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/primary_dark"
+        android:fontFamily="@font/font_jua_wallet"
+        android:text="Crear Cuenta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/linkLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_jua_wallet"
+        android:text="Ya tienes una cuenta??"
+        android:textColor="@color/primary_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crearCuentaBtn"
+        app:layout_constraintVertical_bias="0.25" />
+</androidx.constraintlayout.widget.ConstraintLayout>
