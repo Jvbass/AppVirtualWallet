@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login">
+    android:background="@drawable/bg_login"
+    android:id="@+id/login_page">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -36,7 +37,7 @@
         android:fontFamily="@font/font_jua_wallet"
         android:text="Logea y empieza a"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -49,7 +50,7 @@
         android:fontFamily="@font/font_jua_wallet"
         android:text="transferir!"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tittleLogin1" />
