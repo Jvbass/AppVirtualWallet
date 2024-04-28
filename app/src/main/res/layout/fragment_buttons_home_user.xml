@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ButtonsHomeUser">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:layout_width="170dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@color/color_send"
+            android:fontFamily="@font/font_jua_wallet"
+            android:text="Enviar dinero"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/send_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRequest"
+            android:layout_width="170dp"
+            android:layout_height="49dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/font_jua_wallet"
+            android:text="Ingresar dinero"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:layout_marginRight="15dp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/request_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -6,4 +6,6 @@
     <color name="opacity_white">#79FFFFFF</color>
     <color name="primary">#63B8FC</color>
     <color name="primary_dark">#1A87DD</color>
+    <color name="color_send">#72DB31</color>
+    <color name="color_grey">#801A1A1A</color>
 </resources>
