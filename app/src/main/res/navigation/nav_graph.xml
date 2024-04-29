@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginSignupActivity">
+    app:startDestination="@id/splashFrgmntNav">
+    <fragment
+        android:id="@+id/splashFrgmntNav"
+        android:name="cl.jpinodev.virtualwallet.fragments.SplashFrgmntNav"
+        android:label="fragment_splash_frgmnt_nav"
+        tools:layout="@layout/fragment_splash_frgmnt_nav" >
+        <action
+            android:id="@+id/action_splashFrgmntNav_to_loginSignFrgmntNav"
+            app:destination="@id/loginSignFrgmntNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFrgmntNav"
+        android:name="cl.jpinodev.virtualwallet.fragments.LoginFrgmntNav"
+        android:label="fragment_login_frgmnt_nav"
+        tools:layout="@layout/fragment_login_frgmnt_nav" />
+    <fragment
+        android:id="@+id/loginSignFrgmntNav"
+        android:name="cl.jpinodev.virtualwallet.fragments.LoginSignFrgmntNav"
+        android:label="fragment_login_sign_frgmnt_nav"
+        tools:layout="@layout/fragment_login_sign_frgmnt_nav" >
+        <action
+            android:id="@+id/action_loginSignFrgmntNav_to_loginFrgmntNav"
+            app:destination="@id/loginFrgmntNav" />
+        <action
+            android:id="@+id/action_loginSignFrgmntNav_to_signUpFrgmntNav"
+            app:destination="@id/signUpFrgmntNav" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFrgmntNav"
+        android:name="cl.jpinodev.virtualwallet.fragments.SignUpFrgmntNav"
+        android:label="fragment_sign_up_frgmnt_nav"
+        tools:layout="@layout/fragment_sign_up_frgmnt_nav" >
+        <action
+            android:id="@+id/action_signUpFrgmntNav_to_loginFrgmntNav"
+            app:destination="@id/loginFrgmntNav" />
+    </fragment>
     <activity
-        android:id="@+id/loginSignupActivity"
-        android:name="cl.jpinodev.virtualwallet.LoginSignupActivity"
-        android:label="LoginSignupActivity" />
-    <activity
-        android:id="@+id/logInActivity"
-        android:name="cl.jpinodev.virtualwallet.LogInActivity"
-        android:label="LogInActivity" />
-    <activity
-        android:id="@+id/signUpActivity"
-        android:name="cl.jpinodev.virtualwallet.SignUpActivity"
-        android:label="SignUpActivity" />
+        android:id="@+id/mainActivity"
+        android:name="cl.jpinodev.virtualwallet.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+
 </navigation>

@@ -10,19 +10,24 @@ import android.view.ViewGroup;
 
 import cl.jpinodev.virtualwallet.R;
 
-public class UserHeader extends Fragment {
-    public UserHeader() {
+public class LoginFrgmntNav extends Fragment {
+
+        public LoginFrgmntNav() {
+        // Required empty public constructor
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
+
         }
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_user_header, container, false);
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_login_frgmnt_nav, container, false);
     }
 }
