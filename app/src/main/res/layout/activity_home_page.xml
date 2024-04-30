@@ -4,7 +4,7 @@
     android:id="@+id/HomePage"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomePage"
+    tools:context=".HomePageActivity"
     android:orientation="vertical"
     android:weightSum="12">
 
