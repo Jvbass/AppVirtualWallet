@@ -2,18 +2,14 @@ package cl.jpinodev.virtualwallet;
 
 import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.FragmentManager;
 
 import cl.jpinodev.virtualwallet.fragments.ButtonsHomeUser;
-import cl.jpinodev.virtualwallet.fragments.TransactionsList;
+import cl.jpinodev.virtualwallet.fragments.TransactionList;
 import cl.jpinodev.virtualwallet.fragments.UserHeader;
 
-public class HomePage extends AppCompatActivity {
+public class HomePageActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +31,7 @@ public class HomePage extends AppCompatActivity {
     }
 
     private void loadHomeUserContentFragment() {
-        fm.beginTransaction().replace(R.id.fragmentUserContent, new TransactionsList()).commit();
+        fm.beginTransaction().replace(R.id.fragmentUserContent, new TransactionList()).commit();
     }
 
 }
