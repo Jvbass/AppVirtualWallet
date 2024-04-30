@@ -171,10 +171,11 @@
         app:layout_constraintVertical_bias="0.506" />
 
     <TextView
+        android:id="@+id/link_crear_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/font_jua_wallet"
-        android:text="@string/slogan"
+        android:text="Crear una nueva cuenta"
         android:textColor="@color/primary_dark"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
