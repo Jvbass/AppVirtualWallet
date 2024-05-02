@@ -21,6 +21,7 @@
             android:layout_marginLeft="15dp"
             app:cornerRadius="10dp"
             app:icon="@drawable/send_icon"
+            app:iconTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
