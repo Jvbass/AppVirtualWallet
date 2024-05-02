@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TransactionList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transaction_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/font_jua_wallet"
+            android:text="Ultimas transacciones"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="16dp">
+            <ImageView
+                android:id="@+id/user_avatar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/operation_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/oval_bg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/transaction_detail" />
+            <ImageView
+                android:id="@+id/operation_icon_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send_icon_yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/operation_bg"
+                app:layout_constraintEnd_toEndOf="@+id/operation_bg"
+                app:layout_constraintStart_toStartOf="@+id/operation_bg"
+                app:layout_constraintTop_toTopOf="@+id/operation_bg" />
+            <LinearLayout
+                android:id="@+id/transaction_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/user_avatar1"
+                app:layout_constraintStart_toEndOf="@+id/user_avatar1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Yara Khalil"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteY="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Oct 14, 10:24 AM"
+                    android:textColor="@color/color_grey"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/transaction_operation_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_currency_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="15.00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="16dp">
+            <ImageView
+                android:id="@+id/user_avatar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/operation_bg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/oval_bg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/transaction_detail2" />
+            <ImageView
+                android:id="@+id/operation_icon_send2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/request_icon_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/operation_bg2"
+                app:layout_constraintEnd_toEndOf="@+id/operation_bg2"
+                app:layout_constraintStart_toStartOf="@+id/operation_bg2"
+                app:layout_constraintTop_toTopOf="@+id/operation_bg2" />
+            <LinearLayout
+                android:id="@+id/transaction_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/user_avatar2"
+                app:layout_constraintStart_toEndOf="@+id/user_avatar2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Sara Ibrahim"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteY="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Oct 12, 02:13 PM"
+                    android:textColor="@color/color_grey"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/transaction_operation_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_currency_symbol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_amount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="20.50"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="16dp">
+            <ImageView
+                android:id="@+id/user_avatar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/operation_bg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/oval_bg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/transaction_detail3" />
+            <ImageView
+                android:id="@+id/operation_icon_send3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/request_icon_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/operation_bg3"
+                app:layout_constraintEnd_toEndOf="@+id/operation_bg3"
+                app:layout_constraintStart_toStartOf="@+id/operation_bg3"
+                app:layout_constraintTop_toTopOf="@+id/operation_bg3" />
+            <LinearLayout
+                android:id="@+id/transaction_detail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/user_avatar3"
+                app:layout_constraintStart_toEndOf="@+id/user_avatar3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Yara Khalil"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteY="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Oct 11, 01:19 AM"
+                    android:textColor="@color/color_grey"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/transaction_operation_type3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_currency_symbol3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_amount3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="12.40"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="16dp">
+            <ImageView
+                android:id="@+id/user_avatar4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/operation_bg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/oval_bg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/transaction_detail4" />
+            <ImageView
+                android:id="@+id/operation_icon_send4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/send_icon_yellow"
+                app:layout_constraintBottom_toBottomOf="@+id/operation_bg4"
+                app:layout_constraintEnd_toEndOf="@+id/operation_bg4"
+                app:layout_constraintStart_toStartOf="@+id/operation_bg4"
+                app:layout_constraintTop_toTopOf="@+id/operation_bg4" />
+            <LinearLayout
+                android:id="@+id/transaction_detail4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/user_avatar4"
+                app:layout_constraintStart_toEndOf="@+id/user_avatar4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Yara Khalil"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteY="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Oct 07, 09:10 PM"
+                    android:textColor="@color/color_grey"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/transaction_operation_type4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_currency_symbol4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_amount4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="21.30"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="16dp">
+            <ImageView
+                android:id="@+id/user_avatar5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/operation_bg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/oval_bg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/transaction_detail5" />
+            <ImageView
+                android:id="@+id/operation_icon_send5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/request_icon_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/operation_bg5"
+                app:layout_constraintEnd_toEndOf="@+id/operation_bg5"
+                app:layout_constraintStart_toStartOf="@+id/operation_bg5"
+                app:layout_constraintTop_toTopOf="@+id/operation_bg5" />
+            <LinearLayout
+                android:id="@+id/transaction_detail5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/user_avatar5"
+                app:layout_constraintStart_toEndOf="@+id/user_avatar5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Yara Khalil"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteY="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="Oct 04, 05:45 AM"
+                    android:textColor="@color/color_grey"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteY="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/transaction_operation_type5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="+"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_currency_symbol5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="$"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+                <TextView
+                    android:id="@+id/transaction_amount5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_jua_wallet"
+                    android:text="09.00"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="215dp"
+                    tools:layout_editor_absoluteY="23dp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
