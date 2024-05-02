@@ -10,20 +10,21 @@ import android.view.ViewGroup;
 
 import cl.jpinodev.virtualwallet.R;
 
-public class TransactionsList extends Fragment {
-
-    public TransactionsList() {
+public class TransactionList extends Fragment {
+        public TransactionList() {
     }
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
         }
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_transactions_list, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_transaction_list, container, false);
     }
 }

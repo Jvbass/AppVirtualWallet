@@ -13,7 +13,10 @@
         android:theme="@style/Theme.VirtualWallet"
         tools:targetApi="31">
         <activity
-            android:name=".HomePage"
+            android:name=".TransactionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageActivity"
             android:exported="false" />
         <activity
             android:name=".LoginSignupActivity"
