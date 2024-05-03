@@ -8,4 +8,5 @@
     <color name="primary_dark">#1A87DD</color>
     <color name="color_send">#72DB31</color>
     <color name="color_grey">#801A1A1A</color>
+    <color name="color_grey_light">#F3F4F5</color>
 </resources>
