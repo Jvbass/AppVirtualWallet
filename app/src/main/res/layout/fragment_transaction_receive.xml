@@ -190,7 +190,7 @@
         android:fontFamily="@font/jua"
         android:text="Ingresar Dinero"
         app:icon="@drawable/request_icon_blue"
-        app:iconTint="@color/black"
+        app:iconTint="@color/white"
         app:iconGravity="textStart"
         app:iconPaddingRight="10dp"
         android:textColor="@color/white"
