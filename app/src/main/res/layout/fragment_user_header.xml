@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.UserHeader"
-    android:background="@drawable/background_head">
-
+    >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/background_head"
+        >
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -139,4 +140,5 @@
             app:layout_constraintStart_toEndOf="@+id/greeting_name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>
