@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/loginSignupActivity">
-    <activity
-        android:id="@+id/loginSignupActivity"
-        android:name="cl.jpinodev.virtualwallet.LoginSignupActivity"
-        android:label="LoginSignupActivity" />
-    <activity
-        android:id="@+id/logInActivity"
-        android:name="cl.jpinodev.virtualwallet.LogInActivity"
-        android:label="LogInActivity" />
-    <activity
-        android:id="@+id/signUpActivity"
-        android:name="cl.jpinodev.virtualwallet.SignUpActivity"
-        android:label="SignUpActivity" />
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/userHeader">
+    <fragment
+            android:id="@+id/userHeader"
+            android:name="cl.jpinodev.virtualwallet.fragments.UserHeader"
+            android:label="fragment_user_header"
+            tools:layout="@layout/fragment_user_header" />
+    <fragment
+            android:id="@+id/buttonsHomeUser"
+            android:name="cl.jpinodev.virtualwallet.fragments.ButtonsHomeUser"
+            android:label="fragment_buttons_home_user"
+            tools:layout="@layout/fragment_buttons_home_user" />
+    <fragment
+            android:id="@+id/emptyTransactionList"
+            android:name="cl.jpinodev.virtualwallet.fragments.EmptyTransactionList"
+            android:label="fragment_empty_transaction_list"
+            tools:layout="@layout/fragment_empty_transaction_list" />
+    <fragment
+            android:id="@+id/profilePage"
+            android:name="cl.jpinodev.virtualwallet.fragments.ProfilePage"
+            android:label="fragment_profile_page"
+            tools:layout="@layout/fragment_profile_page" />
+    <fragment
+            android:id="@+id/transactionList"
+            android:name="cl.jpinodev.virtualwallet.fragments.TransactionList"
+            android:label="fragment_transaction_list"
+            tools:layout="@layout/fragment_transaction_list" />
+    <fragment
+            android:id="@+id/transactionSend"
+            android:name="cl.jpinodev.virtualwallet.fragments.TransactionSend"
+            android:label="fragment_transaction_send"
+            tools:layout="@layout/fragment_transaction_send" />
+    <fragment
+            android:id="@+id/transactionReceive"
+            android:name="cl.jpinodev.virtualwallet.fragments.TransactionReceive"
+            android:label="fragment_transaction_receive"
+            tools:layout="@layout/fragment_transaction_receive" />
 </navigation>
