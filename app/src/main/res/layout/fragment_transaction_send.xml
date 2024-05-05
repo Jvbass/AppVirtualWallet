@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TransactionReceive">
+    tools:context=".fragments.TransactionSend">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -194,7 +194,6 @@
             app:icon="@drawable/send_icon"
             app:iconTint="@color/black"
             app:iconGravity="textStart"
-            app:iconPaddingRight="10dp"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:translationZ="100dp"

@@ -192,7 +192,6 @@
         app:icon="@drawable/request_icon_blue"
         app:iconTint="@color/white"
         app:iconGravity="textStart"
-        app:iconPaddingRight="10dp"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:translationZ="100dp"
