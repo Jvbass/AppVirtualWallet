@@ -120,7 +120,6 @@
                 android:id="@+id/text_qty_send"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:focusedSearchResultHighlightColor="@color/color_send"
                 android:fontFamily="@font/font_jua_wallet"
                 android:textColor="@color/color_send"
                 android:inputType="numberDecimal"
@@ -149,10 +148,10 @@
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="@color/primary"
+            app:boxStrokeColor="@color/color_send"
             app:boxStrokeWidth="2dp"
             app:boxStrokeWidthFocused="3dp"
-            app:placeholderTextColor="@color/black"
+            app:placeholderTextColor="@color/color_send"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
             app:layout_constraintStart_toStartOf="@+id/guideline4"
             app:layout_constraintTop_toBottomOf="@+id/label_comentario_transferencia">
@@ -167,8 +166,8 @@
                 android:hint="Agregar notas de transferencia (opcional)"
                 app:hintEnabled="true"
                 android:fontFamily="@font/font_jua_wallet"
-                android:textColor="@color/primary"
-                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:inputType="textMultiLine"
                 android:textColorHint="@color/black_light" />
         </com.google.android.material.textfield.TextInputLayout>
 
