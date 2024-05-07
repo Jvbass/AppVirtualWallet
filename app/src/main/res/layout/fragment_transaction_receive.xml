@@ -165,8 +165,8 @@
             android:layout_height="match_parent"
             android:textSize="14sp"
             android:fontFamily="@font/font_jua_wallet"
-            android:textColor="@color/primary"
-            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
             android:textColorHint="@color/black_light" />
     </com.google.android.material.textfield.TextInputLayout>
 
