@@ -3,10 +3,15 @@
     <h2><strong>Proyecto Desarrollo Android - VirtualWallet</strong> </br>  </h2>
     <span>Evaluacion Integradora Modulo 4 Desarrollo Android</span><br>
     <span>Juan Pino Contreras.</span>
+  <br>
 </div>
 
 ![Pantallas App Virtual Wallet](./PantallasApp.png)
 
+#### Notas del desarrollador:
+- En la ventana Home page, al hacer click en el icono _campana de notificaciones_ mostrara en el FrameLayout inferior la lista de transacciones.
+- Al hacer clicn en _foto de perfil_ se mostrara la ventana Profile
+- En las ventanas _Request Money_ y _Send Money_, la flecha hacia atrás del MaterialToolbar ubicado en la parte superior, envia al usuario devuelta al _Home_.
 ****
 ## 💸 VirtualWallet
 
