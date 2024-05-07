@@ -15,7 +15,7 @@
 ****
 ## 💸 VirtualWallet
 
-En este proyecto se aplican conceptos de diseño y programacion en una aplicacion movil para el entorno Android. Esta diseñada para demostrar la estructura básica de una aplicación Android utilizando XML, Java, actividades, fragmentos, diseño en figma y navegacion entre componentes. 
+En este proyecto se aplican conceptos aprendidos de diseño y programacion para una aplicacion movil en el entorno Android. Se presentan el uso de diferentes Layouts y en distinta organizaciones, ya sea en pantalla completa, un layout sobre otro y dos layouts presentados en una pagina. Esta diseñada para demostrar la estructura básica de una aplicación Android utilizando XML, Java, actividades, fragmentos, diseño en figma y navegacion entre componentes. 
 
 
 ## 📲Pantallas
