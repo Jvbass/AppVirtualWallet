@@ -25,7 +25,7 @@
                     android:text="Mi perfil"
                     android:textAlignment="center"
                     android:fontFamily="@font/font_jua_wallet"
-                    android:textSize="20dp"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
