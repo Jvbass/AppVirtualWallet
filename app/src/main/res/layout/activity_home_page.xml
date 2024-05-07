@@ -1,34 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/HomePage"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomePageActivity"
-    android:orientation="vertical"
-    android:weightSum="12">
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/HomePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomePageActivity"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentUserHeader"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            tools:layout="@layout/fragment_user_header" />
 
     <FrameLayout
-        android:id="@+id/fragmentUserHeader"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="5"
-        tools:layout="@layout/fragment_user_header"
-        />
+            android:id="@+id/fragmentTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:visibility="gone"
+            tools:layout="@layout/fragment_transaction_list" />
 
     <FrameLayout
-        android:id="@+id/buttonPanel"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_user_header"
-        />
-
+            android:id="@+id/fragmentEmptyTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            tools:layout="@layout/fragment_empty_transaction_list" />
 
     <FrameLayout
-        android:id="@+id/fragmentUserContent"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="7"
-        />
+            android:id="@+id/fragnentSend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout="@layout/fragment_transaction_send" />
+
+    <FrameLayout
+            android:id="@+id/fragmentReceive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout="@layout/fragment_transaction_receive" />
 </LinearLayout>

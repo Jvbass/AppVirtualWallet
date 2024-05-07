@@ -6,139 +6,180 @@
     android:layout_height="match_parent"
     tools:context=".fragments.UserHeader"
     >
-    <androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background_head"
-        >
+        android:orientation="vertical"
+        android:weightSum="12">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/background_head"
+            android:layout_weight="10"
+            >
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.08" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.08" />
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.08" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.08" />
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
 
         <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.92" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.92" />
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.92" />
 
         <TextView
-            android:id="@+id/name_page"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="Inicio"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/guideline1"
-            app:layout_constraintTop_toTopOf="@+id/guideline" />
+                android:id="@+id/name_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Inicio"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline1"
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="@+id/guideline" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <TextView
-            android:id="@+id/currency_symbol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="$"
-            android:textColor="@color/white"
-            android:textSize="48sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintStart_toStartOf="@+id/guideline1" />
+                android:id="@+id/currency_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="$"
+                android:textColor="@color/white"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="@+id/guideline1" />
 
         <TextView
-            android:id="@+id/balance_amount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="124.57"
-            android:textColor="@color/white"
-            android:textSize="48sp"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintStart_toEndOf="@+id/currency_symbol" />
+                android:id="@+id/balance_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="124.57"
+                android:textColor="@color/white"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintStart_toEndOf="@+id/currency_symbol" />
 
         <ImageView
-            android:id="@+id/notificaction_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/notifications__icon"
-            app:layout_constraintBottom_toTopOf="@+id/guideline3"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+                android:id="@+id/notificaction_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notifications__icon"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline2" />
 
         <TextView
-            android:id="@+id/balance_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="Balance total"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/balance_amount"
-            app:layout_constraintStart_toStartOf="@+id/guideline1" />
+                android:id="@+id/balance_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Balance total"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/balance_amount"
+                app:layout_constraintStart_toStartOf="@+id/guideline1" />
 
         <TextView
-            android:id="@+id/greeting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="Hola,"
-            android:layout_marginBottom="8dp"
-            android:textColor="@color/opacity_white"
-            android:textSize="16sp"
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Hola,"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/opacity_white"
+                android:textSize="16sp"
 
-            app:layout_constraintBottom_toTopOf="@+id/balance_title"
-            app:layout_constraintEnd_toStartOf="@+id/greeting_name"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="@+id/guideline1" />
-
-        <TextView
-            android:id="@+id/greeting_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="Amanda"
-            android:textColor="@color/opacity_white"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/balance_title"
-            app:layout_constraintStart_toEndOf="@+id/greeting" />
+                app:layout_constraintBottom_toTopOf="@+id/balance_title"
+                app:layout_constraintEnd_toStartOf="@+id/greeting_name"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline1" />
 
         <TextView
-            android:id="@+id/exclamation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/font_jua_wallet"
-            android:text="!"
+                android:id="@+id/greeting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Amanda"
+                android:textColor="@color/opacity_white"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/balance_title"
+                app:layout_constraintStart_toEndOf="@+id/greeting" />
 
-            android:textColor="@color/opacity_white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@+id/greeting_name"
-            app:layout_constraintStart_toEndOf="@+id/greeting_name" />
-
+        <TextView
+                android:id="@+id/exclamation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="!"
+                android:textColor="@color/opacity_white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/greeting_name"
+                app:layout_constraintStart_toEndOf="@+id/greeting_name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSend"
+                android:layout_width="170dp"
+                android:layout_height="49dp"
+                android:backgroundTint="@color/color_send"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Enviar dinero"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/send_icon"
+                app:iconTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRequest"
+                android:layout_width="170dp"
+                android:layout_height="49dp"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/font_jua_wallet"
+                android:text="Ingresar dinero"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginEnd="15dp"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/request_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
 </FrameLayout>
