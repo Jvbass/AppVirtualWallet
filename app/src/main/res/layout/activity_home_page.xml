@@ -43,4 +43,11 @@
             android:layout_height="match_parent"
             android:visibility="gone"
             tools:layout="@layout/fragment_transaction_receive" />
+
+    <FrameLayout
+            android:id="@+id/fragmentProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout="@layout/fragment_profile_page" />
 </LinearLayout>
